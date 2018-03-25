@@ -45,15 +45,17 @@ def index():
     return form
 
 @app.route("/", methods=['POST'])
-def encrypt():
+
+
+def encrypt(text):
     # stored values of request parameters, converting types as necessary
     number = int('')
     text = ''
+
+    rotate_string = text + rotate_string
     #encrypt the value of the text parameter using rotate_string
 
 
     return '<h1>' + encrypted_string + ' </h1>'
-
-app.route("/")
 
 app.run()
